@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="62pjTbsIyqTLEqm7qZVThdB8nATBdOuTYMl7-5BXmWM" /> 
     <!-- Styles -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <link href="assets/css/style-responsive-red.css" rel="stylesheet">
+  <link href="{{ page.root }}assets/css/bootstrap.css" rel="stylesheet">
+  <link href="{{ page.root }}assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ page.root }}assets/css/font-awesome.css">
+    <link href="{{ page.root }}assets/css/style-responsive-red.css" rel="stylesheet">
     <!-- Google Web Font-->
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- fav icons -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="{{ page.root }}assets/img/favicon.ico">
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -43,50 +43,25 @@
   <div class="container">
       <div class="row" id="header">
         <div class="span12">
-         <img src="assets/img/logo.png" alt="Gewerbehof Hennigdorf" width="621" height="140" />
+         <img src="{{ page.root }}assets/img/logo.png" alt="Gewerbehof Hennigdorf" width="621" height="140" />
         </div><!--end span12-->        
       </div><!--end row-->
       
-      <div class="row" id="catchycontent">
+      <div class="row">
         <div class="span12">
-        <h2>
-          {{ contenttitle }}
-        </h2>
-        <p>
-          {{ content }}
-        </p>
+        <h1>
+          Diese Seite befindet sich einige Stunden in Überarbeitung. <br />
+          Wir bitten um Verständnis.
+        </h1>
         </div><!--end span12-->            
       </div><!--end row-->
       
-      <div class="row" id="features">
-        <div class="span3 divider">
-          <div class="featureicon"><i class="icon-resize-full"></i></div>
-            <h3>Responsive</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
-        </div>        
-        <div class="span3 divider">
-          <div class="featureicon"><i class="icon-flag"></i></div>
-            <h3>Font Awesome Icons</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
-        </div>       
-        <div class="span3 divider">
-          <div class="featureicon"><i class="icon-envelope"></i></div>
-            <h3>Mail Chimp Signup Form</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
-        </div>
-         <div class="span3">
-          <div class="featureicon"><i class="icon-font"></i></div>
-            <h3>Google WebFonts</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
-        </div>
-      </div><!--end row-->
-      
       <div class="row" id="footer">
-        <h4><strong>Email:</strong> <a href="mailto: info@pension-hennigsdorf.de" title="Kontaktieren Sie uns: info@pension-hennigsdorf.de">info@pension-hennigsdorf.de</a> | <a href="impressum" title="Impressum">Impressum</a><br />
+        <h4><strong>Email:</strong> <a href="mailto:info@pension-hennigsdorf.de" title="Kontaktieren Sie uns: info@pension-hennigsdorf.de">info@pension-hennigsdorf.de</a> | <a href="impressum" title="Impressum">Impressum</a><br />
         &copy; GBE Interessengemeinschaft GbR 2012</h4>
       </div><!--end row-->      
       </div><!--end container-->
       <!-- For IE 7 and 8 Media Query Support -->    
-      <script type="text/javascript" src="assets/js/respond.js"></script>
+      <script type="text/javascript" src="{{ page.root }}assets/js/respond.js"></script>
   </body>
 </html>
