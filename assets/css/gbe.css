@@ -1,0 +1,19 @@
+/*
+Author			:	Rajendra Prasad A
+URL				:	http://behance.net/madebyraj
+Company Name	:	DoozyPixels
+Company URL		: 	http://www.doozypixels.com
+Theme			: 	Alizarin
+*/
+
+/*
+ *** COLOR GUIDANCE ***
+ * Alizarin Color 				: #e74c3c for branding
+ * Alizarin Dark Color			: #bc3e31 link and button hover
+*/
+#logo a{
+	background: none;
+}
+body {
+    font-size: 16px;
+}
