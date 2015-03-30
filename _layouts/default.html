@@ -4,22 +4,20 @@
     <meta charset="utf-8">
     <title> {% if page.title %} {{ page.title }} | {% endif %} Gewerbehof Hennigsdorf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page,Subscribe">
     <meta name="author" content="GBE Interessengemeinschaft GbR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="62pjTbsIyqTLEqm7qZVThdB8nATBdOuTYMl7-5BXmWM" /> 
     <!-- Styles -->
-    <link href="{{ page.root }}assets/css/bootstrap.css" rel="stylesheet">
-    <link href="{{ page.root }}assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="{{ page.root }}assets/css/font-awesome.css" rel="stylesheet">
-    <link href="{{ page.root }}assets/css/style-responsive-red.css" rel="stylesheet">
-    <!-- Google Web Font-->
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="{{ page.root }}assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ page.root }}assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ page.root }}assets/css/assets/css/theme-light.css" rel="stylesheet" media="screen" id="skin">
+    <!-- Lato Google Font - For Theme -->        
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <!--[if IE 7]><link rel="stylesheet" href="assets/css/font-awesome-ie7.css"><![endif]-->
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="{{ page.root }}assets/js/html5shiv.js"></script>
+      <script src="{{ page.root }}assets/js/respond.min.js"></script>
     <![endif]-->
     <!-- fav icons -->
     <link rel="shortcut icon" href="{{ page.root }}assets/img/favicon.ico">
@@ -40,32 +38,30 @@
     </script>
 </head>
 <body>
-  
   <div class="container">
-      <div class="row" id="header">
-        <div class="span12">
+    <div class="row">
+      <header id="logo">
+        <div class="col-md-12 col-sm-12">
           <a href="{% if page.root %} {{ page.root }} {% else %} # {% endif %}" title="Gewerbehof Hennigdorf">
-          <img src="{{ page.root }}assets/img/logo.png" alt="Gewerbehof Hennigdorf" width="621" height="140" />
+            <img src="{{ page.root }}assets/img/logo.png" alt="Gewerbehof Hennigdorf" width="621" height="140" />
           </a>
-        </div><!--end span12-->        
-      </div><!--end row-->
-      
-      <div class="row">
-        <div class="span12">
-          {% if page.headline %}
-          <h2>{{ page.headline }}</h2>
-          {% endif %}
+        </div><!--/12-->
+      </header>
 
-          {{ content }}
-        </div><!--end span12-->            
-      </div><!--end row-->
+      {{ content }}
 
-      <div class="row" id="footer">
-        <h4><strong>Email:</strong> <a href="mailto:info@pension-hennigsdorf.de" title="Kontaktieren Sie uns: info@pension-hennigsdorf.de">info@pension-hennigsdorf.de</a> | <a href="impressum" title="Impressum">Impressum</a><br />
-        &copy; GBE Interessengemeinschaft GbR 2012</h4>
-      </div><!--end row-->      
-      </div><!--end container-->
-      <!-- For IE 7 and 8 Media Query Support -->    
-      <script type="text/javascript" src="{{ page.root }}assets/js/respond.js"></script>
+      <footer>            
+        <div class="col-md-12 col-sm-12">
+          <h4><strong>Email:</strong> <a href="mailto:info@pension-hennigsdorf.de" title="Kontaktieren Sie uns: info@pension-hennigsdorf.de">info@pension-hennigsdorf.de</a> | <a href="impressum" title="Impressum">Impressum</a><br />
+          &copy; GBE Interessengemeinschaft GbR 2012</h4>
+        </div><!--/12-->
+      </footer>
+      </div><!--/row-->
+    </div><!--/container-->
+
+    <script src="{{ page.root }}assets/js/jquery.js"></script>
+    <script src="{{ page.root }}assets/js/bootstrap.min.js"></script>
+    <script src="{{ page.root }}assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript">$(function(){$('input, textarea').placeholder();});</script>
   </body>
 </html>
