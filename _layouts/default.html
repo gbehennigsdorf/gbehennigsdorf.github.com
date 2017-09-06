@@ -9,12 +9,16 @@
     <meta name="google-site-verification" content="62pjTbsIyqTLEqm7qZVThdB8nATBdOuTYMl7-5BXmWM" /> 
     <meta http-equiv="Cache-control" content="public">
     <!-- Styles -->
-    <link href="{{ page.root }}assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="{{ page.root }}assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ page.root }}assets/css/theme-light.css" rel="stylesheet" media="screen" id="skin">
-    <link href="{{ page.root }}assets/css/theme-alizarin.css" rel="stylesheet" media="screen" id="swatches">
-    <link href="{{ page.root }}assets/css/gbe.css" rel="stylesheet" media="screen" id="swatches">
-    <!-- Lato Google Font - For Theme -->        
+    <head>
+      <style type="text/css">
+        {% include bootstrap.min.css %}
+        {% include font-awesome.min.css %}
+        {% include theme-light.css %}
+        {% include theme-alizarin.css %}
+        {% include gbe.css %}
+      </style>
+    </head>
+    <!-- Lato Google Font - For Theme -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <!--[if IE 7]><link rel="stylesheet" href="assets/css/font-awesome-ie7.css"><![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
