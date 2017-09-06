@@ -8,10 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="62pjTbsIyqTLEqm7qZVThdB8nATBdOuTYMl7-5BXmWM" /> 
     <meta http-equiv="Cache-control" content="public">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      var WebFontConfig = {
+          google: {
+              families: [ 'Lato:400,700' ]
+          },
+          timeout: 3000
+      };
+
+      (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];;
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+          wf.async = 'true';
+          s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
     <!-- Styles -->
     <style type="text/css">
       {% include bootstrap.min.css %}
-      {% include css/font-awesome.min.css %}
+      {% include font-awesome.min.css %}
       {% include theme-light.css %}
       {% include theme-alizarin.css %}
       {% include gbe.css %}
@@ -38,23 +56,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      var WebFontConfig = {
-          google: {
-              families: [ 'Lato:400,700' ]
-          },
-          timeout: 3000
-      };
-
-      (function(d) {
-          var wf = d.createElement('script'), s = d.scripts[0];;
-          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-          wf.async = 'true';
-          s.parentNode.insertBefore(wf, s);
-      })(document);
     </script>
 </head>
 <body>
